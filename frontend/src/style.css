@@ -1,0 +1,21 @@
+.wallTitle {
+    font-size: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant:small-caps;
+    font-weight: bold;
+    color: white;
+}
+
+.tweetWallContainer {
+    background-color:darkolivegreen;
+    width : 500px;
+    margin: auto;
+    padding: 10px;
+}
+
+.tweetsContainer {
+    background-color:antiquewhite;
+    width : 480px;
+    margin : auto;
+    padding: px;
+}

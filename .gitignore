@@ -1,0 +1,15 @@
+frontend/node_modules
+frontend/.parcel-cache
+frontend/dist
+
+sample[0-9]/node_modules/
+training[0-9]/node_modules/
+training_template/node_modules/
+sample[0-9]/.parcel-cache
+training[0-9]/.parcel-cache
+training_template/.parcel-cache
+sample[0-9]/dist
+training[0-9]/dist/
+training_template/dist/
+*.png
+*.ico
