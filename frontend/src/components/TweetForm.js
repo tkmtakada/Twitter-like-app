@@ -1,16 +1,26 @@
 import React, {useState, useEffect} from 'react';
 
 const postNewTweet = async (tweetText) => {
+    // 整形
+    const tweetData = {
+        id:8,
+        userName: 'me',
+        userId: 'userIdMe',
+        text: tweetText
+    };
+
     // push option
     fetchOption = {
-        method: 'Push',
-        body: tweetText,
+        method: 'POST',
+        body: JSON.stringify(tweetData),
         headers: {'Content-Type' : 'application/json'}
-    }
+    };
 
     // try to push the message!
     try {
-        const response = await window.fetch("http://localhost:8080/tweets");
+        const response = await window.fetch(
+            'http://localhost:8080/tweets',
+            fetchOption);
         if (!response.ok) throw new Error(`error... ${response.status}`);
         window.alert('your tweet has been successfully published!');
     } catch (error) {
