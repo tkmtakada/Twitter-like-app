@@ -19,3 +19,9 @@
     margin : auto;
     padding: px;
 }
+
+.tweetFormContainer {
+    background-color: red;
+    width : 90%;
+    margin : auto;
+}
