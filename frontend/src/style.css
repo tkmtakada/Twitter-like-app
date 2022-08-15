@@ -3,25 +3,57 @@
     font-family: 'Times New Roman', Times, serif;
     font-variant:small-caps;
     font-weight: bold;
-    color: white;
+    color: rgb(37, 65, 156);
 }
 
 .tweetWallContainer {
-    background-color:darkolivegreen;
+    background-color:rgb(198, 231, 240);
     width : 500px;
     margin: auto;
     padding: 10px;
 }
 
 .tweetsContainer {
-    background-color:antiquewhite;
+    background-color:rgb(253, 248, 241);
     width : 480px;
     margin : auto;
     padding: px;
+    border-top: solid 2px gray;
 }
 
 .tweetFormContainer {
-    background-color: red;
     width : 90%;
     margin : auto;
+}
+
+.tweetsHeader {
+    display: flex;
+    padding-top: 10px;
+
+}
+.userName {
+    /*width:45%;*/
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.userId {
+    width: 45%;
+    padding-left: 10px;
+    color: gray;
+}
+
+.tweetsContent {
+    font-size: 24px;
+    padding: 10 20 10 20;
+}
+
+.editArea {
+    width: 100%;
+    margin: auto;
+}
+
+.tweetButtonContainer {
+    width:25%;
+    margin-left: auto;    
 }

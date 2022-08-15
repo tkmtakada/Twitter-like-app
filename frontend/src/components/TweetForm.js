@@ -1,11 +1,12 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
+import { TweetCounter } from './App';
 
 const postNewTweet = async (tweetText) => {
     // 整形
     const tweetData = {
-        id:8,
-        userName: 'me',
-        userId: 'userIdMe',
+        // id: 5,
+        userName: 'たくみ',
+        userId: '@tenshokugachizei',
         text: tweetText
     };
 
@@ -22,7 +23,8 @@ const postNewTweet = async (tweetText) => {
             'http://localhost:8080/tweets',
             fetchOption);
         if (!response.ok) throw new Error(`error... ${response.status}`);
-        window.alert('your tweet has been successfully published!');
+        // window.alert('your tweet has been successfully published!');
+        console.log('your tweet has beeen posted!')
     } catch (error) {
         window.alert("We couldnt post your tweet.");
         console.log(error);
@@ -33,13 +35,17 @@ const postNewTweet = async (tweetText) => {
 const TweetForm = () => {
 
     const [tweetText, setTweetText] = useState("");
+    const [tweetCounter, setTweetCounter] = useContext(TweetCounter);
 
     // handle push button action
     // newTweetTextを送信する？
-    const handleClick = () => {
+    const handleClick = (e) => {
         // window.alert(`You gonna tweet ${tweetText}`);
         // json serverに送信
         postNewTweet(tweetText);
+        setTweetCounter(tweetCounter+1);
+        const tweetForm = document.getElementById('tweetForm');
+        tweetForm.value = '';
     };
 
     // handle textArea change
@@ -51,11 +57,13 @@ const TweetForm = () => {
     return (
         <div className="tweetFormContainer">
             <div>
-                <textarea onChange={handleTextAreaChange} />
+                <textarea onChange={handleTextAreaChange} className="editArea" id="tweetForm" />
             </div>
-            <button onClick={handleClick}>
-                送信                
-            </button>
+            <div className="tweetButtonContainer">
+                <button onClick={handleClick}>
+                    ついーとする                
+                </button>
+            </div>
         </div>
     );
 };

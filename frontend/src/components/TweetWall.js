@@ -5,7 +5,7 @@ import TweetForm from './TweetForm';
 const TweetWall = (props) => {
     return (
         <div className="tweetWallContainer">
-            <div className="wallTitle">Solotter</div>
+            <div className="wallTitle">つぃったー</div>
             {props.tweets.map( (tweet, idx) => {
                 return (<Tweet key={idx}
                                 userName={tweet.userName}

@@ -3,9 +3,11 @@ import React from 'react';
 const Tweet = (props) => {
     return (
         <div className="tweetsContainer">
-            <h2>{props.userName}</h2>
-            <h2>{props.userId}</h2>
-            <h2>{props.text}</h2>
+            <div className="tweetsHeader">
+                <div className="userName">{props.userName}</div>
+                <div className="userId">{props.userId}</div>
+            </div>
+            <div className="tweetsContent">{props.text}</div>
         </div>
     );
 };
