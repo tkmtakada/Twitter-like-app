@@ -3,41 +3,30 @@
     {
       "userName": "かなめっち",
       "userId": "@kanameb",
-      "text": "I love researching. I wanna go back to ISI."
+      "text": "How about going dinner on early November?"
     },
     {
       "userName": "わたっさん",
       "userId": "@onlyyahoowins",
-      "text": "Me too."
+      "text": "sounds good"
     },
     {
       "userName": "かなめっち",
       "userId": "@kanameb",
-      "text": "I think we should quit our job ASAP."
-    },
-    {
-      "id": 4,
-      "userName": "わたっさん",
-      "userId": "@onlyyahoowins",
-      "text": "yep, agree."
+      "text": "Great, which time do you like?",
+      "id": 3
     },
     {
       "userName": "たくみ",
       "userId": "@tenshokugachizei",
-      "text": "Wow! Great!!",
+      "text": "Nice:)",
+      "id": 4
+    },
+    {
+      "userName": "たくみ",
+      "userId": "@tenshokugachizei",
+      "text": "I'm fine with any day but I work until 6 on weekdays",
       "id": 5
-    },
-    {
-      "userName": "たくみ",
-      "userId": "@tenshokugachizei",
-      "text": "Go for itttt!!! b",
-      "id": 6
-    },
-    {
-      "userName": "たくみ",
-      "userId": "@tenshokugachizei",
-      "text": "Enjoy Ph.D life!! :)",
-      "id": 7
     }
   ]
 }
